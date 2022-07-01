@@ -33,9 +33,17 @@ exit 0
 fi
 mkdir /var/lib/crot;
 echo "IP=" >> /var/lib/crot/ipvps.conf
-#auto pointingvps
-wget https://raw.githubusercontent.com/nazrenv3/iwa/main/subhost.sh && chmod +x addhost.sh && ./addhost.sh
-#install xray
+
+echo '============================================='
+echo "Sila Masukkan DOMAIN, Jika TIADA KLIK Enter"
+echo '============================================='
+read -p "Hostname / Domain: " host
+echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
+echo "IP=$host" >> /var/lib/crot-script/ipvps.conf
+echo "$host" >> /etc/xray/domain
+echo "$host" >> /etc/v2ray/domain
+clear
+
 #wget https://raw.githubusercontent.com/farukbrowser/SLXRAY/main/xray/ins-xray.sh && chmod +x ins-xray.sh && screen -S xray ./ins-xray.sh
 wget https://raw.githubusercontent.com/farukbrowser/SLXRAY/main/xray/sl-xray.sh && chmod +x sl-xray.sh && screen -S xray ./sl-xray.sh
 #xtrojan
