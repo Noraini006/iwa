@@ -34,7 +34,7 @@ fi
 mkdir /var/lib/crot;
 echo "IP=" >> /var/lib/crot/ipvps.conf
 #auto pointingvps
-wget https://raw.githubusercontent.com/farukbrowser/SLXRAY/main/ssh/slhost.sh && chmod +x slhost.sh && ./slhost.sh
+wget https://raw.githubusercontent.com/nazrenv3/main/ssh/slhost.sh && chmod +x slhost.sh && ./slhost.sh
 #install xray
 #wget https://raw.githubusercontent.com/farukbrowser/SLXRAY/main/xray/ins-xray.sh && chmod +x ins-xray.sh && screen -S xray ./ins-xray.sh
 wget https://raw.githubusercontent.com/farukbrowser/SLXRAY/main/xray/sl-xray.sh && chmod +x sl-xray.sh && screen -S xray ./sl-xray.sh
