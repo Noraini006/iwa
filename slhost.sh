@@ -20,10 +20,10 @@ echo "$SUB_DOMAIN" >> /etc/v2ray/domain
 #
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 subsl=$(</dev/urandom tr -dc a-z0-9 | head -c5)
-DOMAIN=24clanssh.com
-SUB_DOMAIN=server-${sub}.24clanssh.com
-NS_DOMAIN=slowdns-${subsl}.24clanssh.com
-CF_ID=slinfinity69@gmail.com
+DOMAIN=scvpn.me
+SUB_DOMAIN=sv-${sub}.scvpn.me
+NS_DOMAIN=dns-${subsl}.scvpn.me
+CF_ID=nor4ini96@gmail.com
 CF_KEY=dd2c5e0313f122b3c1833471d469b1025f492
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
