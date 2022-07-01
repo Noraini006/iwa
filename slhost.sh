@@ -24,7 +24,7 @@ DOMAIN=scvpn.me
 SUB_DOMAIN=sv-${sub}.scvpn.me
 NS_DOMAIN=dns-${subsl}.scvpn.me
 CF_ID=nor4ini96@gmail.com
-CF_KEY=dd2c5e0313f122b3c1833471d469b1025f492
+CF_KEY=2772836954dcac81ab190f184db6fe844df26
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${SUB_DOMAIN}..."
