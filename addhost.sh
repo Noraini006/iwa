@@ -4,6 +4,7 @@ green='\e[0;32m'
 NC='\e[0m'
 MYIP=$(wget -qO- icanhazip.com);
 apt install jq curl -y
+
 rm -f /root/domain
 rm -f /etc/v2ray/domain
 rm -f /etc/xray/domain
