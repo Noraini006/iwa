@@ -32,20 +32,17 @@ echo "Script Already Installed"
 exit 0
 fi
 mkdir /var/lib/crot;
-
+echo "IP=" >> /var/lib/crot/ipvps.conf
 read -p "Hostname / Domain: " host
 echo "$host" >> /etc/xray/domain
 echo "$host" >> /etc/v2ray/domain
-echo "IP="$MYIP" >> /var/lib/crot/ipvps.conf
+echo "IP=""$host" >> /var/lib/crot/ipvps.conf
 echo $host >> /root/domain
 echo "$host" >> /root/nsdomain
-clear
 
-#wget https://raw.githubusercontent.com/farukbrowser/SLXRAY/main/xray/ins-xray.sh && chmod +x ins-xray.sh && screen -S xray ./ins-xray.sh
 wget https://raw.githubusercontent.com/farukbrowser/SLXRAY/main/xray/sl-xray.sh && chmod +x sl-xray.sh && screen -S xray ./sl-xray.sh
-#xtrojan
 wget https://raw.githubusercontent.com/farukbrowser/SLXRAY/main/xray/x-trojan.sh && chmod +x x-trojan.sh && screen -S x-trojan ./x-trojan.sh
-#install ssh
+
 wget https://raw.githubusercontent.com/farukbrowser/SLXRAY/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 rm -f /root/ins-xray.sh
 rm -f /root/sl-xray.sh
