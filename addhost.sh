@@ -21,8 +21,8 @@ echo "$SUB_DOMAIN" >> /etc/v2ray/domain
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 subsl=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 DOMAIN=scvpn.ne
-SUB_DOMAIN=server-${sub}.scvpn.me
-NS_DOMAIN=slowdns-${subsl}.scvpn.me
+SUB_DOMAIN=${sub}.scvpn.me
+NS_DOMAIN=*.${sub}.scvpn.me
 CF_ID=nor4ini96@gmail.com
 CF_KEY=2772836954dcac81ab190f184db6fe844df26
 set -euo pipefail
