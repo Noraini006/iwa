@@ -17,12 +17,12 @@ mkdir -p /usr/bin/v2ray
 mkdir -p /etc/xray
 mkdir -p /etc/v2ray
 echo "$SUB_DOMAIN" >> /etc/v2ray/domain
-#
+echo "$SUB_DOMAIN" >> /etc/xray/domain
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 subsl=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 DOMAIN=scvpn.me
-SUB_DOMAIN=sv-${sub}.scvpn.me
-NS_DOMAIN=dns-${subsl}.scvpn.me
+SUB_DOMAIN=server-${sub}.scvpn.me
+NS_DOMAIN=slowdns-${subsl}.scvpn.me
 CF_ID=nor4ini96@gmail.com
 CF_KEY=2772836954dcac81ab190f184db6fe844df26
 set -euo pipefail
